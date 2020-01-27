@@ -1,0 +1,16 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Client : MonoBehaviour
+{
+    public NPCSpawner m_SpawnerNPC;
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            m_SpawnerNPC.SpawnVillagers();
+        }
+    }
+}
